@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #F5F7FA;
+    color: #2E2E2E;
+    line-height: 1.6;
+  }
+
+  /* الهيدر المشترك */
+  header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* القائمة المشتركة */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #004b93;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #003f7e;
+    transform: scale(1.1);
+  }
+
+  nav img.logo {
+    padding: 10px;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+  }
+
+  /* أقسام الصفحة المشتركة */
+  .section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+    color: #0057A8;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  /* زر رئيسي مشترك */
+  .btn-primary {
+    background: linear-gradient(90deg, #0057A8, #00c6ff);
+    color: white;
+    padding: 14px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  .btn-primary:hover {
+    transform: scale(1.1);
+  }
+
+  /* الفوتر المشترك */
+  footer {
+    background-color: #0057A8;
+    text-align: center;
+    padding: 30px 20px;
+    color: #F5F7FA;
+    margin-top: 60px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  footer a {
+    color: #F5F7FA;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* الصفحة الرئيسية */
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    color: #0057A8;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .hero p {
+    font-size: 20px;
+    color: #6B6B6B;
+    margin-bottom: 30px;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+  }
+
+  .feature {
+    background-color: #F5F7FA;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature h3 {
+    color: #0057A8;
+    font-weight: 700;
+  }
+
+  /* صفحة المنتجات */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+  }
+
+  .product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .product:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+
+  .product img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .product:hover img {
+    transform: scale(1.05);
+  }
+
+  .product h3 {
+    margin: 0 0 10px;
+    color: #0057A8;
+    font-weight: 700;
+  }
+
+  .product p {
+    margin: 0 0 10px;
+    color: #666;
+  }
+
+  .product .price {
+    color: #FF6B00;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .btn-add {
+    background-color: #0057A8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  .btn-add:hover {
+    background-color: #003f7e;
+  }
+
+  /* صفحة من نحن */
+  .about-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .about-content p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 18px;
+  }
+
+  /* صفحة اتصل بنا */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0057A8;
+    font-weight: 600;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  .form-group textarea {
+    min-height: 150px;
+  }
+
+  /* التكيف مع الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+    }
+    
+    nav a {
+      padding: 10px 15px;
+    }
+    
+    .hero h1 {
+      font-size: 32px;
+    }
+    
+    .section {
+      padding: 40px 15px;
+    }
+  }

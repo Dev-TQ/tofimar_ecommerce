@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>توفيمار - متجر إلكتروني عصري</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- الهيدر المشترك -->
+  <header id="home">
+    <h1>توفيمار – Tofimar</h1>
+  </header>
+
+  <!-- القائمة المشتركة -->
+  <nav>
+    <img src="tofimar-logo.png" alt="شعار توفيمار" class="logo"  href="#home"/>
+    <a href="#home">الرئيسية</a>
+    <a href="#about">عنّا</a>
+    <a href="#products">منتجاتنا</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <!-- الصفحة الرئيسية -->
+  <section id="home-section" class="hero">
+    <h1>مرحباً بك في توفيمار</h1>
+    <p>منصة إلكترونية عصرية تقدّم لك كل ما تحتاجه بأسلوب بسيط واحترافي.</p>
+    <a href="#products" class="btn-primary" style="text-decoration: none;">تصفح المنتجات</a>
+  </section>
+
+  <section class="section">
+    <div class="features">
+      <div class="feature">
+        <h3>تجربة سهلة</h3>
+        <p>واجهة استخدام بسيطة وسلسة تتيح لك تصفح وشراء المنتجات بسهولة.</p>
+      </div>
+      <div class="feature">
+        <h3>دفع آمن</h3>
+        <p>نظام دفع إلكتروني آمن لحماية بياناتك وتوفير راحة البال.</p>
+      </div>
+      <div class="feature">
+        <h3>توصيل سريع</h3>
+        <p>خدمة توصيل موثوقة تصل إليك خلال وقت قصير.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم المنتجات -->
+  <section id="products" class="section" style="background-color: #F5F7FA;">
+    <h2 class="section-title">تشكيلة منتجاتنا</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="product1.jpg" alt="منتج 1">
+        <h3>منتج 1</h3>
+        <p>وصف مختصر للمنتج الأول.</p>
+        <div class="price">99 ر.س</div>
+        <button class="btn-add">إضافة إلى السلة</button>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="منتج 2">
+        <h3>منتج 2</h3>
+        <p>وصف مختصر للمنتج الثاني.</p>
+        <div class="price">149 ر.س</div>
+        <button class="btn-add">إضافة إلى السلة</button>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="منتج 3">
+        <h3>منتج 3</h3>
+        <p>وصف مختصر للمنتج الثالث.</p>
+        <div class="price">79 ر.س</div>
+        <button class="btn-add">إضافة إلى السلة</button>
+      </div>
+      <div class="product">
+        <img src="product4.jpg" alt="منتج 4">
+        <h3>منتج 4</h3>
+        <p>وصف مختصر للمنتج الرابع.</p>
+        <div class="price">129 ر.س</div>
+        <button class="btn-add">إضافة إلى السلة</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم من نحن -->
+  <section id="about" class="section">
+    <h2 class="section-title">من نحن</h2>
+    <div class="about-content">
+      <p>توفيمار هو متجر إلكتروني عصري يقدم لك أفضل المنتجات بأسلوب احترافي وسهل. نحن نركز على تقديم تجربة تسوق مريحة وآمنة لعملائنا، ونحرص على توصيل المنتجات بسرعة وكفاءة.</p>
+      <p>تأسس متجر توفيمار في عام 2023 بهدف توفير تجربة تسوق إلكتروني مميزة تلبي احتياجات العملاء في المملكة العربية السعودية والوطن العربي.</p>
+      <p>نحن نؤمن بأن رضا العميل هو أساس نجاحنا، لذلك نعمل جاهدين لتقديم أفضل المنتجات بأفضل الأسعار مع خدمة عملاء مميزة.</p>
+      <a href="#contact" class="btn-primary">تواصل معنا</a>
+    </div>
+  </section>
+
+  <!-- قسم اتصل بنا -->
+  <section id="contact" class="section" style="background-color: #F5F7FA;">
+    <h2 class="section-title">تواصل معنا</h2>
+    <div class="contact-form">
+      <form>
+        <div class="form-group">
+          <label for="name">الاسم الكامل</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">رسالتك</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">إرسال الرسالة</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- الفوتر المشترك -->
+  <footer>
+    <p>&copy; 2025 جميع الحقوق محفوظة – <a href="#">توفيمار</a></p>
+    <p style="margin-top: 15px;">
+      <a href="#home">الرئيسية</a> | 
+      <a href="#about">عنّا</a> | 
+      <a href="#products">منتجاتنا</a> | 
+      <a href="#contact">تواصل معنا</a>
+    </p>
+  </footer>
+
+</body>
+</html>
